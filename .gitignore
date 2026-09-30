@@ -6,4 +6,3 @@ mlruns/
 data/cache/
 *.egg-info/
 .DS_Store
-.python-version
