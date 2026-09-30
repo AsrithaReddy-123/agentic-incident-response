@@ -1,7 +1,5 @@
 # Agentic Incident Response
 
-[![CI](https://github.com/AsrithaReddy-123/agentic-incident-response/actions/workflows/ci.yml/badge.svg)](https://github.com/AsrithaReddy-123/agentic-incident-response/actions/workflows/ci.yml)
-
 Agents retrieve a runbook, rank root causes, and either cite a remediation step that appears in that runbook or escalate.
 
 ## Measured results
@@ -16,7 +14,7 @@ Agents retrieve a runbook, rank root causes, and either cite a remediation step 
 | Unsupported remediation, unvalidated | 1.00 |
 | Unsupported remediation, validated | 0.00 |
 
-The ingestion rate is the in-process bus, not a Kafka cluster. CI starts Kafka and Elasticsearch and runs `tests/test_services.py` against them. The published quality numbers are in [`evaluation/results/benchmark.json`](evaluation/results/benchmark.json).
+The ingestion rate is the in-process bus, not a Kafka cluster. `tests/test_services.py` talks to Kafka and Elasticsearch when `KAFKA_BOOTSTRAP` and `ELASTICSEARCH_URL` are set. The published quality numbers are in [`evaluation/results/benchmark.json`](evaluation/results/benchmark.json).
 
 ## Architecture
 
