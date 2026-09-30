@@ -53,8 +53,8 @@ def build_runbooks() -> list[Runbook]:
         else:
             doc_id = f"note-{index}"
             text = (
-                f"Historical note {doc_id}: operators discussed {service} capacity, cafeteria wifi, "
-                f"and a status-page typo. No {CAUSES[index % len(CAUSES)][2]} customer impact was declared."
+                f"Historical note {doc_id}: operators discussed office capacity, cafeteria wifi, "
+                f"and a status-page typo. No customer impact was declared."
             )
             cause, service, code, team, step = "none", service, "", "", ""
         books.append(Runbook(doc_id, cause, service, code, team, text, step if index < len(CAUSES) else ""))

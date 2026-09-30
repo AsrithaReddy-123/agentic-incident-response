@@ -1,0 +1,14 @@
+{
+  "project": "agentic-incident-response",
+  "log_events": 100000,
+  "events_per_second": 410096.6,
+  "runbook_chunks": 5200,
+  "labeled_incidents": 80,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "recall@5": 1.0,
+  "top3_root_cause_accuracy": 1.0,
+  "unsupported_rate_unvalidated": 1.0,
+  "unsupported_rate_validated": 0.0,
+  "notes": "Synthetic logs and runbooks. Elasticsearch and Kafka clients are used when ELASTICSEARCH_URL or KAFKA_BOOTSTRAP is set. This run used the local index and in-process bus.",
+  "unsupported_reduction": 1.0
+}
